@@ -1,4 +1,4 @@
-/*! Create Elements With Object 1.0.0 | https://github.com/zulkarneynyavas/create-element-with-object | (c) 2021 Zülkarneyn Yavaş | MIT License */
+/*! Create Html Elements With Object 1.0.0 | https://github.com/zulkarneynyavas/create-element-with-object | (c) 2021 Zülkarneyn Yavaş | MIT License */
 HTMLElement.prototype.cewo = function(a, r) {
     var t = this;
     a.forEach(function(e) {
