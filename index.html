@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<div id="append-here"></div>
-	<script src="cewo.min.js"></script>
-	<script>
-		document.getElementById('append-here').cewo([
-			{
-				'tag': 'div',
-				'att': {
-					'class': 'test'
-				},
-				'child': [
-					{
-						'tag': 'button',
-						'att': {
-							'type': 'button'
-						},
-						'html': 'Click me!',
-						'script': {
-							'load': function(event) {
-								console.log('Button element created');
-							},
-							'click': function(event) {
-								document.getElementById('response').cewo([
-									{
-										'tag': 'div',
-										'html': 'test'
-									}
-								]);
-							}
-						}
-					}
-				]
-			},
-			{
-				'tag': 'div',
-				'att': {
-					'id': 'response'
-				},
-				'script': {
-					'load': function(event) {
-						console.log('Response element created');
-					}
-				}
-			},
-			{
-				'tag': 'div',
-				'child': [
-					{
-						'tag': 'span',
-						'child': [
-							{
-								'tag': 'ul',
-								'child': [
-									{
-										'tag': 'li',
-										'html': 'q'
-									}
-								]
-							}
-						]
-					}
-				]
-			}
-		]);
-	</script>
+    <div id="append-here"></div>
+    <script src="cewo.min.js"></script>
+    <script>
+        document.getElementById('append-here').cewo([
+            {
+                'tag': 'div',
+                'att': {
+                    'class': 'test'
+                },
+                'child': [
+                    {
+                        'tag': 'button',
+                        'att': {
+                            'type': 'button'
+                        },
+                        'html': 'Click me!',
+                        'script': {
+                            'load': function(event) {
+                                console.log('Button element created');
+                            },
+                            'click': function(event) {
+                                document.getElementById('response').cewo([
+                                    {
+                                        'tag': 'div',
+                                        'html': 'test'
+                                    }
+                                ]);
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                'tag': 'div',
+                'att': {
+                    'id': 'response'
+                },
+                'script': {
+                    'load': function(event) {
+                        console.log('Response element created');
+                    }
+                }
+            },
+            {
+                'tag': 'div',
+                'child': [
+                    {
+                        'tag': 'span',
+                        'child': [
+                            {
+                                'tag': 'ul',
+                                'child': [
+                                    {
+                                        'tag': 'li',
+                                        'html': 'q'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]);
+    </script>
 </body>
 </html>
