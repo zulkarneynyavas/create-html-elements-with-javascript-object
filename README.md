@@ -17,13 +17,13 @@ JAVASCRIPT:
 document.getElementById('append-here').cewo([
     {
         'tag': 'div',
-        'att': {
+        'atts': {
             'class': 'test'
         },
         'child': [
             {
                 'tag': 'button',
-                'att': {
+                'atts': {
                     'type': 'button'
                 },
                 'html': 'Click me!',
@@ -46,7 +46,7 @@ document.getElementById('append-here').cewo([
     },
     {
         'tag': 'div',
-        'att': {
+        'atts': {
             'id': 'response'
         },
         'script': {
