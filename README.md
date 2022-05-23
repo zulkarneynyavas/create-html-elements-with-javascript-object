@@ -18,7 +18,8 @@ document.getElementById('append-here').cewo([
     {
         'tag': 'div',
         'atts': {
-            'class': 'test'
+            'class': 'test',
+            'id': 'example'
         },
         'child': [
             {
@@ -31,8 +32,8 @@ document.getElementById('append-here').cewo([
                     'load': function(event) {
                         console.log('Button element created');
                     },
+                    // You can use all Event Listeners
                     'click': function(event) {
-                        // You can use all addeventlisteners
                         document.getElementById('response').cewo([
                             {
                                 'tag': 'div',
@@ -80,7 +81,7 @@ document.getElementById('append-here').cewo([
 RESULT:
 ```html
 <div id="append-here">
-    <div class="test">
+    <div class="test" id="example">
         <button type="button">Click me!</button>
     </div>
     <div id="response"></div>
