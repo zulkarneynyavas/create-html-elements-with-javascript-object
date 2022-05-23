@@ -13,13 +13,13 @@
         document.getElementById('append-here').cewo([
             {
                 'tag': 'div',
-                'att': {
+                'atts': {
                     'class': 'test'
                 },
                 'child': [
                     {
                         'tag': 'button',
-                        'att': {
+                        'atts': {
                             'type': 'button'
                         },
                         'html': 'Click me!',
@@ -28,6 +28,7 @@
                                 console.log('Button element created');
                             },
                             'click': function(event) {
+                                // You can use all addeventlisteners
                                 document.getElementById('response').cewo([
                                     {
                                         'tag': 'div',
@@ -41,7 +42,7 @@
             },
             {
                 'tag': 'div',
-                'att': {
+                'atts': {
                     'id': 'response'
                 },
                 'script': {

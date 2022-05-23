@@ -32,6 +32,7 @@ document.getElementById('append-here').cewo([
                         console.log('Button element created');
                     },
                     'click': function(event) {
+                        // You can use all addeventlisteners
                         document.getElementById('response').cewo([
                             {
                                 'tag': 'div',

@@ -6,9 +6,9 @@ HTMLElement.prototype.cewo = function(a, r) {
         if (e.html) {
             r.innerHTML = e.html;
         }
-        if (e.att) {
-            Object.keys(e.att).forEach(function(k) {
-                r.setAttribute(k, e.att[k]);
+        if (e.atts) {
+            Object.keys(e.atts).forEach(function(k) {
+                r.setAttribute(k, e.atts[k]);
             });
         }
         if (e.script) {
