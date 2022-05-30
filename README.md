@@ -5,14 +5,14 @@ Create HTML elements with Javascript Object easily.
 #
 
 
-EXAMPLE
+## EXAMPLE
 
-HTML:
+### Html
 ```html
 <div id="append-here"></div>
 ```
 
-JAVASCRIPT:
+### Javascript
 ```javascript
 document.getElementById('append-here').cewo([
     {
@@ -78,7 +78,7 @@ document.getElementById('append-here').cewo([
 ]);
 ```
 
-RESULT:
+### Result
 ```html
 <div id="append-here">
     <div class="test" id="example">
@@ -93,4 +93,9 @@ RESULT:
         </span>
     </div>
 </div>
+```
+
+### How do I use this without webpack, browserify?
+```html
+<script src="https://unpkg.com/create-html-elements-with-javascript-object"></script>
 ```
